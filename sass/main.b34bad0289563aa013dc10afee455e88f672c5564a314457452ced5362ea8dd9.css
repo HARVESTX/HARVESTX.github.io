@@ -137,7 +137,8 @@ header {
   color: white;
   height: 144px;
   line-height: 144px;
-  text-align: center; }
+  text-align: center;
+  margin-top: 108px; }
   .news-header h1 {
     color: white;
     font-size: 60px;
@@ -210,7 +211,7 @@ footer {
   background: #F2F2F2; }
 
 section {
-  padding: 108px 0; }
+  padding: 60px 0; }
 
 .section-title-wrapper {
   margin-bottom: 1.5rem;
@@ -239,6 +240,7 @@ section {
   background-image: url("/image/top.jpg");
   background-size: cover;
   background-position: center;
+  margin-top: 108px;
   display: flex;
   flex-direction: column;
   align-items: center;
