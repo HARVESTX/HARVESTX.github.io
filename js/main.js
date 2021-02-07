@@ -20,17 +20,13 @@ function preventEvent(event) {
 }
 
 //ファーストビューの高さの設定
-const isSP = /iPhone|iPod|iPad|Android|Macintosh/i.test(navigator.userAgent) && 'ontouchend' in document
- 
-// 端末の種類をもとにCSS変数を定義
-const setOuterHeight = () =>{
+document.addEventListener('DOMContentLoaded', function(){
+  const isSP = /iPhone|iPod|iPad|Android|Macintosh/i.test(navigator.userAgent) && 'ontouchend' in document
+  console.log(isSP)
   if(isSP){
-    console.log(isSP)
     document.documentElement.style.setProperty(
-      '--outer-height',
-      `${window.outerHeight}px`
+      '--inner-height',
+      `${window.innerHeight}px`
     )
   }
-}
-
-document.addEventListener('DOMContentLoaded', setOuterHeight)
+})
