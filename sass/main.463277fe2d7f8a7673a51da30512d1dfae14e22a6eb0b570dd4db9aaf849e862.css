@@ -1116,6 +1116,8 @@ header {
         grid-template-columns: 30% 30% 1fr;
         column-gap: 5%;
         row-gap: 64px; } }
+  .position_card:hover {
+    background: #f7f7f7; }
   @media screen and (min-width: 1025px) {
     .position_card {
       width: 100%;
