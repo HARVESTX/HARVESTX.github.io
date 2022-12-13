@@ -14,18 +14,18 @@ header {
   background: rgba(0, 0, 0, 0.9);
 }
 
-/* .header_right a {
+header a {
   color: white;
 }
 
-.header_right a:hover {
+header a:hover {
   color: #c91b48;
 }
 
-.header_btn-wrapper p{
+.header_btn-wrapper p {
   color: white
 }
 
-.header_nav-btn span{
+.header_nav-btn span {
   background-color: white;
-} */
+}
