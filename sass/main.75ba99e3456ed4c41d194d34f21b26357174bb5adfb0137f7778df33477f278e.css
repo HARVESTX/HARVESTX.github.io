@@ -55,12 +55,12 @@ section:last-child {
       width: calc(100vw - 80px);
       max-width: 960px; } }
 .contents-wrapper {
-  padding-top: 64px;
+  padding-top: 48px;
   padding-bottom: 80px;
   position: relative; }
   @media screen and (min-width: 1025px) {
     .contents-wrapper {
-      padding-top: 80px;
+      padding-top: 64px;
       padding-bottom: 100px; } }
 .section-wrapper {
   margin-bottom: 64px; }
@@ -79,7 +79,8 @@ section:last-child {
   font-size: 20px;
   font-weight: 500;
   line-height: 32px;
-  margin-bottom: 32px; }
+  margin-bottom: 32px;
+  font-feature-settings: "palt"; }
 
 .button-xs {
   display: inline-block;
@@ -192,7 +193,8 @@ section:last-child {
   font-size: 18px;
   line-height: 32px;
   font-weight: 500;
-  margin-bottom: 24px; }
+  margin-bottom: 24px;
+  font-feature-settings: "palt"; }
   @media screen and (min-width: 1025px) {
     .caption {
       font-size: 20px;
@@ -753,6 +755,26 @@ header {
   @media screen and (min-width: 1025px) {
     .top_news-cards {
       margin-bottom: 48px; } }
+.top_solutions-name {
+  max-width: 100%;
+  font-feature-settings: "palt";
+  font-size: 24px;
+  letter-spacing: 2px;
+  margin-bottom: 24px; }
+  @media screen and (min-width: 560px) {
+    .top_solutions-name {
+      font-size: 36px;
+      line-height: 45px; } }
+  @media screen and (min-width: 1025px) {
+    .top_solutions-name {
+      font-size: 40px;
+      line-height: 52px; } }
+.top_solutions-mainimg {
+  margin-bottom: 40px; }
+  @media screen and (min-width: 1025px) {
+    .top_solutions-mainimg {
+      max-width: 720px;
+      margin: 0 auto 40px; } }
 .top_solutions-wrapper {
   display: grid;
   margin: 0 auto;
@@ -798,19 +820,11 @@ header {
   .top_tech-img img {
     width: 100%; }
 
-.top_company-buttons {
-  display: flex;
-  flex-direction: column; }
-  .top_company-buttons a {
-    margin-bottom: 32px; }
-    .top_company-buttons a:last-child {
-      margin-bottom: 0; }
+.top-mission {
+  margin-bottom: 40px; }
   @media screen and (min-width: 1025px) {
-    .top_company-buttons {
-      flex-direction: row;
-      justify-content: space-between; }
-      .top_company-buttons a {
-        margin-bottom: 0; } }
+    .top-mission {
+      margin-bottom: 48px; } }
 .top_career-positions {
   margin-bottom: 48px !important; }
 
@@ -1104,7 +1118,9 @@ header {
           margin-bottom: 10px; } }
     .solution_header-contents h1 {
       color: white;
-      max-width: 100%; }
+      max-width: 100%;
+      font-feature-settings: "palt";
+      letter-spacing: 2px; }
       @media screen and (min-width: 560px) {
         .solution_header-contents h1 {
           font-size: 36px;
