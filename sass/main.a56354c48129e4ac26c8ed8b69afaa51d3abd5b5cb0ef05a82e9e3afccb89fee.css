@@ -52,7 +52,7 @@ section:last-child {
   max-width: 700px; }
   @media screen and (min-width: 1025px) {
     .container {
-      width: calc(100vw - 80px);
+      width: 960px;
       max-width: 960px; } }
 .contents-wrapper {
   padding-top: 48px;
@@ -252,7 +252,7 @@ header {
   height: 100%; }
   @media screen and (min-width: 1025px) {
     .header_mobile {
-      padding: 0 40px; } }
+      padding: 0 32px; } }
 .header_logo img {
   height: 22px;
   max-width: 181px; }
@@ -265,7 +265,7 @@ header {
 .header_right {
   display: flex;
   align-items: center;
-  gap: 0 32px; }
+  gap: 0 22px; }
 
 .header_btn-wrapper {
   text-align: center;
@@ -314,7 +314,7 @@ header {
   display: flex; }
   .pc_nav ul {
     display: flex;
-    gap: 0 24px;
+    gap: 0 22px;
     padding: 0;
     margin: 0; }
   .pc_nav li {
@@ -386,17 +386,17 @@ header {
     font-size: 40px;
     color: #ffffff;
     text-transform: capitalize; }
-  @media screen and (min-width: 1025px) {
-    .section-header h1 {
-      font-size: 48px; } }
   .section-header img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     height: 100%;
-    width: auto;
-    text-align: center; }
-  @media screen and (min-width: 560px) {
-    .section-header img {
-      height: auto;
-      width: 100%; } }
+    width: auto; }
+  @media screen and (min-width: 1025px) {
+    .section-header {
+      height: 240px; }
+      .section-header h1 {
+        font-size: 48px; } }
 .footer_contacts-wrapper {
   background: #f5f5f5;
   height: 240px; }
@@ -429,7 +429,7 @@ header {
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
-      margin: 0 40px;
+      margin: 0 32px;
       padding: 0; } }
 .footer_logo {
   margin-bottom: 36px; }
@@ -945,61 +945,58 @@ header {
 .founding-story {
   margin-bottom: 48px; }
 
-.members-info img {
-  display: block;
-  margin-bottom: 20px;
-  height: 240px;
-  width: 240px;
-  object-fit: cover;
-  border-radius: 50%; }
-
-.members-info h3 {
-  color: rgba(0, 0, 0, 0.9);
-  margin-bottom: 0; }
-
-.members-info h4 {
-  color: #D6315A;
-  font-weight: 700;
-  margin-bottom: 16px; }
-
-.board_wrapper {
-  margin-bottom: 100px; }
-
-.board_each {
+.member-list_wrapper {
   display: flex;
-  align-items: center;
-  flex-direction: column;
-  margin-bottom: 48px; }
-  @media screen and (min-width: 1025px) {
-    .board_each {
-      flex-direction: row;
-      gap: 0 60px;
-      margin-bottom: 72px; } }
-  .board_each-main {
-    text-align: center; }
-    @media screen and (min-width: 1025px) {
-      .board_each-main {
-        text-align: left; } }
-  .board_each p {
-    text-align: left; }
-
-.employees_wrapper {
-  display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
-  gap: 64px 80px; }
-  .employees_wrapper::after, .employees_wrapper::before {
+  flex-wrap: wrap;
+  row-gap: 40px; }
+  .member-list_wrapper::after {
     content: "";
     display: block;
     width: 240px; }
-  .employees_wrapper::before {
-    order: 1; }
   @media screen and (min-width: 1025px) {
-    .employees_wrapper {
-      justify-content: space-between; } }
-.employees_each {
+    .member-list_wrapper {
+      row-gap: 56px;
+      justify-content: flex-start; } }
+.member-list_card {
   width: 240px;
-  text-align: center; }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 30px;
+  gap: 10px; }
+  .member-list_card img {
+    border-radius: 30px; }
+    .member-list_card img:hover {
+      opacity: 0.7; }
+  .member-list_card h2 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 40px;
+    margin: 0; }
+  .member-list_card p {
+    color: #D6315A;
+    font-weight: 500;
+    line-height: 21px;
+    margin: 0; }
+
+.member-single_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px; }
+  @media screen and (min-width: 1025px) {
+    .member-single_wrapper {
+      flex-direction: row;
+      justify-content: space-between; } }
+@media screen and (min-width: 1025px) {
+  .member-single_content {
+    width: 660px; } }
+
+.member-single_content h2 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #D6315A; }
 
 .partners_message {
   margin-bottom: 64px; }
