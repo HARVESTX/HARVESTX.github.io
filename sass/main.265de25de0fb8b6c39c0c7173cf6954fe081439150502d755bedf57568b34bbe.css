@@ -973,6 +973,37 @@ header {
     line-height: 36px;
     margin: 0; }
 
+.partners_wrapper {
+  display: grid;
+  align-items: center;
+  grid-row-gap: 32px; }
+  @media screen and (min-width: 560px) {
+    .partners_wrapper {
+      margin: 0 auto;
+      grid-row-gap: 40px;
+      grid-template-columns: 240px 240px;
+      grid-template-rows: 160px;
+      justify-content: space-between; } }
+  @media screen and (min-width: 1025px) {
+    .partners_wrapper {
+      max-width: initial;
+      grid-template-columns: 240px 240px 240px;
+      grid-template-rows: 160px; } }
+.partners_each {
+  width: 100%;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff; }
+  .partners_each a {
+    display: block; }
+  .partners_each img {
+    margin: 0 !important;
+    width: 100% !important;
+    max-width: 200px;
+    max-height: 120px; }
+
 .founding-story {
   margin-bottom: 48px; }
 
@@ -1030,43 +1061,6 @@ header {
   font-size: 16px;
   font-weight: 500;
   color: #D6315A; }
-
-.partners_message {
-  margin-bottom: 64px; }
-  .partners_message a {
-    display: block;
-    margin: 0 auto; }
-  @media screen and (min-width: 1025px) {
-    .partners_message {
-      margin-bottom: 96px; } }
-.partners_wrapper {
-  display: grid;
-  align-items: center;
-  grid-row-gap: 32px; }
-  @media screen and (min-width: 560px) {
-    .partners_wrapper {
-      margin: 0 auto;
-      grid-row-gap: 40px;
-      grid-template-columns: 240px 240px;
-      grid-template-rows: 160px;
-      justify-content: space-between; } }
-  @media screen and (min-width: 1025px) {
-    .partners_wrapper {
-      max-width: initial;
-      grid-template-columns: 240px 240px 240px;
-      grid-template-rows: 160px; } }
-.each-supporter {
-  width: 100%;
-  height: 160px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #ffffff; }
-  .each-supporter a {
-    display: block; }
-  .each-supporter img {
-    max-width: 200px;
-    max-height: 120px; }
 
 @media screen and (min-width: 1025px) {
   .career_lead-img {
