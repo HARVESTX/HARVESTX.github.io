@@ -12,7 +12,7 @@ h4 {
 h1 {
   font-weight: 700;
   font-size: 24px; }
-  @media screen and (min-width: 1025px) {
+  @media screen and (min-width: 1080px) {
     h1 {
       font-size: 32px; } }
 h3 {
@@ -46,7 +46,7 @@ img {
   width: 100%;
   text-align: center;
   margin: 24px auto; }
-  @media screen and (min-width: 1025px) {
+  @media screen and (min-width: 1080px) {
     img {
       width: 75%;
       margin-bottom: 40px; } }
@@ -59,7 +59,7 @@ section {
   margin: 0 auto;
   width: calc(100vw - 40px);
   max-width: 700px; }
-  @media screen and (min-width: 1025px) {
+  @media screen and (min-width: 1080px) {
     .container {
       width: 960px;
       max-width: 960px; } }
@@ -67,7 +67,7 @@ section {
   padding-top: 48px;
   padding-bottom: 80px;
   position: relative; }
-  @media screen and (min-width: 1025px) {
+  @media screen and (min-width: 1080px) {
     .contents-wrapper {
       padding-top: 64px;
       padding-bottom: 100px; } }
@@ -76,7 +76,7 @@ section {
   line-height: 40px;
   margin-bottom: 32px;
   text-align: left; }
-  @media screen and (min-width: 1025px) {
+  @media screen and (min-width: 1080px) {
     .section-message {
       font-size: 24px;
       line-height: 48px;
@@ -183,7 +183,7 @@ section {
     width: 8px;
     height: 40px;
     background: #D6315A; }
-  @media screen and (min-width: 1025px) {
+  @media screen and (min-width: 1080px) {
     .section-title {
       font-size: 32px;
       line-height: 56px;
@@ -197,7 +197,7 @@ section {
   font-weight: 500;
   margin-bottom: 24px;
   font-feature-settings: "palt"; }
-  @media screen and (min-width: 1025px) {
+  @media screen and (min-width: 1080px) {
     .caption {
       font-size: 20px;
       line-height: 36px; } }
@@ -208,7 +208,7 @@ section {
   margin-bottom: 24px;
   text-align: center;
   font-feature-settings: "palt"; }
-  @media screen and (min-width: 1025px) {
+  @media screen and (min-width: 1080px) {
     .caption-large {
       font-size: 32px;
       line-height: 48px;
@@ -235,7 +235,7 @@ section {
     font-size: 20px;
     line-height: 36px;
     margin: 0; }
-  @media screen and (min-width: 1025px) {
+  @media screen and (min-width: 1080px) {
     .list-info_each {
       flex-direction: row;
       margin-bottom: 40px; }
@@ -248,7 +248,7 @@ header {
   background: white;
   height: 80px;
   z-index: 20; }
-  @media screen and (min-width: 1025px) {
+  @media screen and (min-width: 1080px) {
     header {
       height: 100px; } }
   header a {
@@ -264,19 +264,17 @@ header {
   justify-content: space-between;
   padding: 0 20px;
   height: 100%; }
-  @media screen and (min-width: 1025px) {
-    .header_mobile {
-      padding: 0 32px; } }
+
 .header_logo img {
   height: 22px;
   max-width: 181px;
   margin: 0 auto; }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1080px) {
   .header_logo img {
     width: 100%;
-    height: 28px;
-    max-width: 231px; } }
+    height: 26px;
+    max-width: 214px; } }
 
 .header_right {
   display: flex;
@@ -326,6 +324,11 @@ header {
     list-style: none;
     padding: 0; }
 
+.header_ghlink {
+  font-size: 28px !important; }
+  .header_ghlink a {
+    color: rgba(0, 0, 0, 0.9); }
+
 .pc_nav {
   display: flex; }
   .pc_nav ul {
@@ -350,7 +353,7 @@ header {
     justify-content: space-between;
     padding: 0 20px;
     height: 80px; }
-    @media screen and (min-width: 1025px) {
+    @media screen and (min-width: 1080px) {
       .nav-open .header_mobile {
         padding: 0 40px;
         height: 100px; } }
@@ -381,10 +384,10 @@ header {
 
 .pc-only {
   display: none; }
-  @media screen and (min-width: 1025px) {
+  @media screen and (min-width: 1080px) {
     .pc-only {
       display: block; } }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1080px) {
   .mb-only {
     display: none !important; } }
 
@@ -409,7 +412,7 @@ header {
     height: 100%;
     width: auto;
     margin: 0 auto; }
-  @media screen and (min-width: 1025px) {
+  @media screen and (min-width: 1080px) {
     .section-header {
       height: 240px; }
       .section-header h1 {
@@ -424,9 +427,13 @@ header {
   flex-direction: column;
   justify-content: center; }
   .footer_contacts-inner p {
-    font-weight: 500; }
+    font-weight: 500;
+    margin: 0 auto 32px; }
 
-@media screen and (min-width: 1025px) {
+.footer_contacts-button {
+  text-align: center; }
+
+@media screen and (min-width: 1080px) {
   .footer_contacts-wrapper {
     height: 140px; }
   .footer_contacts-inner {
@@ -440,7 +447,7 @@ header {
   display: flex;
   flex-direction: column;
   padding: 56px 20px 64px; }
-  @media screen and (min-width: 1025px) {
+  @media screen and (min-width: 1080px) {
     .footer_menu {
       height: 214px;
       flex-direction: row;
@@ -449,11 +456,15 @@ header {
       margin: 0 32px;
       padding: 0; } }
 .footer_logo {
-  margin-bottom: 36px; }
+  margin-bottom: 48px; }
   .footer_logo img {
     height: 30px;
-    max-width: 250px; }
-  @media screen and (min-width: 1025px) {
+    max-width: 250px;
+    margin: 0; }
+  @media screen and (min-width: 560px) {
+    .footer_logo img {
+      margin: 0 auto; } }
+  @media screen and (min-width: 1080px) {
     .footer_logo {
       margin: 0; }
       .footer_logo img {
@@ -461,34 +472,33 @@ header {
         max-width: 296px;
         width: 100%; } }
 .footer_nav ul {
-  width: 65%;
+  width: 320px;
   list-style: none;
   display: flex;
+  gap: 16px 24px;
   flex-wrap: wrap;
   margin: 0;
   padding: 0; }
 
 .footer_nav li {
   display: block;
-  line-height: 48px;
-  padding: 0 24px 0 0;
+  padding: 0;
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase; }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 560px) {
   .footer_nav ul {
-    margin: 0 0 0 auto; } }
+    justify-content: center;
+    margin: 0 auto; } }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1080px) {
   .footer_nav ul {
     width: 100%;
-    justify-content: flex-end; }
+    justify-content: flex-end;
+    column-gap: 22px; }
   .footer_nav li {
-    margin: 0;
-    padding: 0 0 0 32px; }
-    .footer_nav li:first-child {
-      padding: 0; } }
+    margin: 0; } }
 
 .footer_copyright {
   background: #D6315A;
@@ -526,7 +536,7 @@ header {
     display: none; }
   .bg_line-9 {
     display: none; }
-  @media screen and (min-width: 1025px) {
+  @media screen and (min-width: 1080px) {
     .bg_line-2 {
       top: 0;
       left: 12.5%; }
@@ -704,7 +714,7 @@ header {
       .hero-header_message {
         font-size: 72px;
         line-height: 80px; } }
-    @media screen and (min-width: 1025px) {
+    @media screen and (min-width: 1080px) {
       .hero-header_message {
         top: 48%;
         left: 50%;
@@ -764,16 +774,16 @@ header {
   text-align: left;
   letter-spacing: 0.5px;
   margin-bottom: 32px; }
-  @media screen and (min-width: 1025px) {
+  @media screen and (min-width: 1080px) {
     .top-headline {
       margin-bottom: 40px; } }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1080px) {
   .centre-button {
     text-align: center; } }
 
 .top_news-cards {
   margin-bottom: 40px; }
-  @media screen and (min-width: 1025px) {
+  @media screen and (min-width: 1080px) {
     .top_news-cards {
       margin-bottom: 48px; } }
 .top_solutions-name {
@@ -786,13 +796,13 @@ header {
     .top_solutions-name {
       font-size: 36px;
       line-height: 45px; } }
-  @media screen and (min-width: 1025px) {
+  @media screen and (min-width: 1080px) {
     .top_solutions-name {
       font-size: 40px;
       line-height: 52px; } }
 .top_solutions-mainimg {
   margin-bottom: 40px; }
-  @media screen and (min-width: 1025px) {
+  @media screen and (min-width: 1080px) {
     .top_solutions-mainimg {
       max-width: 720px;
       margin: 0 auto 40px; } }
@@ -801,7 +811,7 @@ header {
   margin: 0 auto;
   row-gap: 48px;
   margin-bottom: 48px; }
-  @media screen and (min-width: 1025px) {
+  @media screen and (min-width: 1080px) {
     .top_solutions-wrapper {
       grid-template-columns: 48% 1fr;
       column-gap: 4%;
@@ -820,7 +830,7 @@ header {
   margin: 0 auto;
   row-gap: 48px;
   margin-bottom: 32px; }
-  @media screen and (min-width: 1025px) {
+  @media screen and (min-width: 1080px) {
     .top_tech-wrapper {
       grid-template-columns: 30% 30% 1fr;
       column-gap: 5%;
@@ -830,7 +840,7 @@ header {
   .top_tech-wrapper p {
     text-align: left;
     margin-bottom: 0; }
-  @media screen and (min-width: 1025px) {
+  @media screen and (min-width: 1080px) {
     .top_tech-wrapper {
       margin-bottom: 48px; } }
 .top_tech-each {
@@ -844,10 +854,10 @@ header {
 
 .top_tech-button {
   margin-bottom: 32px; }
-  @media screen and (min-width: 1025px) {
+  @media screen and (min-width: 1080px) {
     .top_tech-button {
       margin-bottom: 48px; } }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1080px) {
   .top_tech-githublink p {
     text-align: center; } }
 
@@ -856,7 +866,7 @@ header {
 
 .top-mission {
   margin-bottom: 40px; }
-  @media screen and (min-width: 1025px) {
+  @media screen and (min-width: 1080px) {
     .top-mission {
       margin-bottom: 48px; } }
 .top_career-positions {
@@ -867,7 +877,7 @@ header {
   .technology_wrapper h3 {
     color: #D6315A;
     margin-bottom: 16px; }
-  @media screen and (min-width: 1025px) {
+  @media screen and (min-width: 1080px) {
     .technology_wrapper {
       margin-bottom: 60px; }
       .technology_wrapper h3 {
@@ -878,7 +888,7 @@ header {
 .technology_description {
   display: flex;
   flex-direction: column; }
-  @media screen and (min-width: 1025px) {
+  @media screen and (min-width: 1080px) {
     .technology_description {
       flex-direction: row;
       align-items: center; } }
@@ -887,7 +897,7 @@ header {
   width: 100%;
   object-fit: cover; }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1080px) {
   .technology_img {
     margin: 0 60px 0 0; }
     .technology_img img {
@@ -903,7 +913,7 @@ header {
   @media screen and (min-width: 560px) {
     .company-mission h3 {
       font-size: 32px; } }
-  @media screen and (min-width: 1025px) {
+  @media screen and (min-width: 1080px) {
     .company-mission h3 {
       font-size: 48px;
       margin-bottom: 40px; } }
@@ -918,7 +928,7 @@ header {
   flex-direction: column;
   margin-bottom: 56px;
   align-items: center; }
-  @media screen and (min-width: 1025px) {
+  @media screen and (min-width: 1080px) {
     .ceo-message {
       flex-direction: row;
       gap: 72px; } }
@@ -932,7 +942,7 @@ header {
     text-align: center; }
     .ceo-message_info p {
       text-align: left; }
-    @media screen and (min-width: 1025px) {
+    @media screen and (min-width: 1080px) {
       .ceo-message_info {
         text-align: left; } }
   .ceo-message_name {
@@ -947,7 +957,7 @@ header {
   display: flex;
   flex-direction: column;
   margin-bottom: 56px; }
-  @media screen and (min-width: 1025px) {
+  @media screen and (min-width: 1080px) {
     .each-office {
       flex-direction: row;
       align-items: center;
@@ -958,7 +968,7 @@ header {
     margin: 0 auto 16px;
     width: 100%;
     object-fit: cover; }
-  @media screen and (min-width: 1025px) {
+  @media screen and (min-width: 1080px) {
     .each-office_image {
       margin-right: 60px; }
       .each-office_image img {
@@ -984,7 +994,7 @@ header {
       grid-template-columns: 240px 240px;
       grid-template-rows: 160px;
       justify-content: space-between; } }
-  @media screen and (min-width: 1025px) {
+  @media screen and (min-width: 1080px) {
     .partners_wrapper {
       max-width: initial;
       grid-template-columns: 240px 240px 240px;
@@ -1016,7 +1026,7 @@ header {
     content: "";
     display: block;
     width: 240px; }
-  @media screen and (min-width: 1025px) {
+  @media screen and (min-width: 1080px) {
     .member-list_wrapper {
       row-gap: 56px;
       justify-content: flex-start; } }
@@ -1030,7 +1040,7 @@ header {
   .member-list_card img {
     border-radius: 30px;
     margin: 0; }
-    @media screen and (min-width: 1025px) {
+    @media screen and (min-width: 1080px) {
       .member-list_card img {
         width: 100%; } }
   .member-list_card h2 {
@@ -1049,11 +1059,11 @@ header {
   flex-direction: column;
   align-items: center;
   gap: 40px; }
-  @media screen and (min-width: 1025px) {
+  @media screen and (min-width: 1080px) {
     .member-single_wrapper {
       flex-direction: row;
       justify-content: space-between; } }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1080px) {
   .member-single_content {
     width: 660px; } }
 
@@ -1062,7 +1072,7 @@ header {
   font-weight: 500;
   color: #D6315A; }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1080px) {
   .career_lead-img {
     width: 62.5%; } }
 
@@ -1085,14 +1095,14 @@ header {
   box-shadow: 0px 0px 6px #00000031; }
   .position_card:hover {
     background: #f7f7f7; }
-  @media screen and (min-width: 1025px) {
+  @media screen and (min-width: 1080px) {
     .position_card {
       width: 100%; } }
   .position_card-wrapper {
     display: grid;
     margin: 0 auto;
     row-gap: 48px; }
-    @media screen and (min-width: 1025px) {
+    @media screen and (min-width: 1080px) {
       .position_card-wrapper {
         grid-template-columns: 30% 30% 1fr;
         column-gap: 5%;
@@ -1128,7 +1138,7 @@ header {
   margin-bottom: 0;
   padding-left: 0;
   row-gap: 24px; }
-  @media screen and (min-width: 1025px) {
+  @media screen and (min-width: 1080px) {
     .value-list {
       flex-direction: row;
       flex-wrap: wrap;
@@ -1151,7 +1161,7 @@ header {
       margin-right: 20px; }
     .value-list li:last-child {
       margin-bottom: 0; }
-    @media screen and (min-width: 1025px) {
+    @media screen and (min-width: 1080px) {
       .value-list li {
         width: 50%; }
         .value-list li::before {
@@ -1165,7 +1175,7 @@ header {
   background-image: url("/img/solutions/hero-header-sm.png");
   background-size: cover;
   height: calc( 80vh - 80px); }
-  @media screen and (min-width: 1025px) {
+  @media screen and (min-width: 1080px) {
     .solution_header {
       background-image: url("/img/solutions/hero-header-lg.png");
       height: calc( 100vh - 100px); } }
@@ -1174,7 +1184,7 @@ header {
     top: 50%;
     left: 20px;
     transform: translateY(-50%); }
-    @media screen and (min-width: 1025px) {
+    @media screen and (min-width: 1080px) {
       .solution_header-contents {
         left: 40px; } }
     .solution_header-contents p {
@@ -1194,7 +1204,7 @@ header {
         .solution_header-contents h1 {
           font-size: 36px;
           line-height: 45px; } }
-      @media screen and (min-width: 1025px) {
+      @media screen and (min-width: 1080px) {
         .solution_header-contents h1 {
           font-size: 48px;
           line-height: 60px; } }
@@ -1222,7 +1232,7 @@ header {
       color: rgba(0, 0, 0, 0.9); }
       .news_card-title a:hover {
         color: #D6315A; }
-  @media screen and (min-width: 1025px) {
+  @media screen and (min-width: 1080px) {
     .news_card {
       flex-direction: row;
       height: 90px;
@@ -1240,7 +1250,7 @@ header {
   font-size: 14px;
   line-height: 20px;
   border: solid 1px #808080; }
-  @media screen and (min-width: 1025px) {
+  @media screen and (min-width: 1080px) {
     .news_category {
       width: 160px;
       font-size: 16px;
@@ -1250,7 +1260,7 @@ header {
   font-weight: 500;
   color: #D6315A;
   font-size: 18px; }
-  @media screen and (min-width: 1025px) {
+  @media screen and (min-width: 1080px) {
     .news_date {
       width: 120px; } }
 .article_meta {
@@ -1280,7 +1290,7 @@ header {
   display: flex;
   flex-direction: column;
   margin-bottom: 36px; }
-  @media screen and (min-width: 1025px) {
+  @media screen and (min-width: 1080px) {
     .sbs_wrapper {
       flex-direction: row;
       align-items: center;
@@ -1290,7 +1300,7 @@ header {
   width: 100%;
   object-fit: cover; }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1080px) {
   .sbs_img {
     margin: 0 60px 0 0; }
     .sbs_img img {
@@ -1302,7 +1312,7 @@ header {
 
 .st-shortcode {
   margin-top: 48px; }
-  @media screen and (min-width: 1025px) {
+  @media screen and (min-width: 1080px) {
     .st-shortcode {
       margin-top: 64px; } }
   .st-shortcode:first-of-type {
@@ -1311,12 +1321,12 @@ header {
 .two-images {
   display: flex;
   flex-direction: column; }
-  @media screen and (min-width: 1025px) {
+  @media screen and (min-width: 1080px) {
     .two-images {
       flex-direction: row; } }
   .two-images img {
     width: 100%; }
-    @media screen and (min-width: 1025px) {
+    @media screen and (min-width: 1080px) {
       .two-images img {
         width: 50%; } }
 .githublink {
@@ -1328,6 +1338,6 @@ header {
     @media screen and (min-width: 560px) {
       .githublink img {
         width: 75%; } }
-    @media screen and (min-width: 1025px) {
+    @media screen and (min-width: 1080px) {
       .githublink img {
         width: 50%; } }

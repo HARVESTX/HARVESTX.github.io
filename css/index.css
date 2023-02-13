@@ -29,3 +29,7 @@ header a:hover {
 .header_nav-btn span {
   background-color: white;
 }
+
+.header_ghlink a{
+  color: white !important;
+}
