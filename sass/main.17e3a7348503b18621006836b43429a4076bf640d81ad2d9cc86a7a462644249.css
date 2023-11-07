@@ -1325,14 +1325,20 @@ header {
   flex-direction: column; }
   @media screen and (min-width: 1080px) {
     .two-images {
-      flex-direction: row; } }
+      flex-direction: row;
+      gap: 24px; } }
   .two-images img {
-    width: 100%; }
+    width: 100%;
+    margin: 12px 0; }
     @media screen and (min-width: 1080px) {
       .two-images img {
         object-fit: contain;
         height: auto;
-        width: 50%; } }
+        width: calc(50% - 12px); } }
+  .two-images_caption {
+    text-align: center;
+    font-weight: 700; }
+
 .githublink {
   margin: 0 auto;
   text-align: center; }
