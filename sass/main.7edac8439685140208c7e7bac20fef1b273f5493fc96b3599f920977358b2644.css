@@ -965,14 +965,15 @@ header {
   .each-office:last-child {
     margin-bottom: 0; }
   .each-office_image img {
-    margin: 0 auto 16px;
     width: 100%;
-    object-fit: cover; }
+    margin: 0 auto 16px; }
   @media screen and (min-width: 1080px) {
     .each-office_image {
-      margin-right: 60px; }
+      margin-right: 60px;
+      width: 360px;
+      height: 240px;
+      overflow: hidden; }
       .each-office_image img {
-        width: 360px;
         margin: 0; } }
   .each-office_info h3 {
     font-size: 24px;
