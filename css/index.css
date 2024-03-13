@@ -33,3 +33,7 @@ header a:hover {
 .header_ghlink a{
   color: white !important;
 }
+
+.header_ghlink a:hover{
+  color: #808080 !important;
+}
