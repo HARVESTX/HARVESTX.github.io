@@ -596,7 +596,7 @@ footer {
 .contact textarea {
   display: block; }
 
-.contact__name, .contact__company, .contact__email, .contact__type, .contact__message {
+.contact__name, .contact__company, .contact__position, .contact__email, .contact__type, .contact__message, .contact__phone {
   margin-bottom: 48px; }
 
 .contact__submitted {
@@ -620,7 +620,9 @@ footer {
 .contact #email,
 .contact #companyName,
 .contact #userName,
-.contact #contactType {
+.contact #contactType,
+.contact #phone,
+.contact #companyPosition {
   padding: 4px 8px;
   border: none;
   border-radius: 0;
@@ -636,7 +638,9 @@ footer {
   .contact #email::placeholder,
   .contact #companyName::placeholder,
   .contact #userName::placeholder,
-  .contact #contactType::placeholder {
+  .contact #contactType::placeholder,
+  .contact #phone::placeholder,
+  .contact #companyPosition::placeholder {
     color: #808080;
     font-family: "Noto Sans JP", sans-serif;
     font-weight: 400;
