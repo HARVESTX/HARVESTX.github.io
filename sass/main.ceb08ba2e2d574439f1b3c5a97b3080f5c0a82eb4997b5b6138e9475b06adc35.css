@@ -681,15 +681,6 @@ footer {
   width: 100%;
   position: relative;
   background: rgba(0, 0, 0, 0.9); }
-  .hero-header::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 5; }
   .hero-header video {
     position: absolute;
     bottom: 0;
@@ -705,36 +696,45 @@ footer {
   .hero-header .resize-video {
     height: auto;
     width: 100%; }
-  .hero-header_message {
+  .hero-header_message-container {
     position: absolute;
     top: 50%;
-    left: 20px;
-    transform: translateY(-50%);
-    text-align: left;
-    font-family: urw-din-semi-condensed, sans-serif;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    width: calc( 100% - 40px); }
+    @media screen and (min-width: 1080px) {
+      .hero-header_message-container {
+        width: 100%; } }
+  .hero-header_title {
     font-weight: 700;
     font-style: normal;
-    font-size: 60px;
-    line-height: 64px;
-    letter-spacing: 1px;
     color: #ffffff;
-    z-index: 10; }
-    @media screen and (min-width: 560px) {
-      .hero-header_message {
-        font-size: 72px;
-        line-height: 80px; } }
+    text-align: left;
+    letter-spacing: 1px;
+    font-size: 40px;
+    line-height: 52px; }
     @media screen and (min-width: 1080px) {
-      .hero-header_message {
-        top: 48%;
-        left: 50%;
-        transform: translateX(-50%);
+      .hero-header_title {
         width: 100%;
         text-align: center;
-        letter-spacing: 4px; } }
-    @media screen and (min-width: 1280px) {
-      .hero-header_message {
+        letter-spacing: 2px;
+        font-size: 56px;
+        line-height: 72px; } }
+  .hero-header_text {
+    font-style: normal;
+    color: #ffffff;
+    text-align: left;
+    letter-spacing: 1px;
+    font-size: 20px;
+    line-height: 28px; }
+    @media screen and (min-width: 1080px) {
+      .hero-header_text {
         width: 100%;
-        font-size: 100px; } }
+        text-align: center;
+        letter-spacing: 2px;
+        font-size: 24px;
+        line-height: 32px; } }
   .hero-header_scroll {
     position: absolute;
     bottom: 80px;
@@ -774,6 +774,29 @@ footer {
   100% {
     transform: translateY(0); } }
 
+.hero-title-br_ja {
+  display: block; }
+  @media screen and (min-width: 560px) {
+    .hero-title-br_ja {
+      display: none; } }
+.hero-title-br_en {
+  display: block; }
+  @media screen and (min-width: 1280px) {
+    .hero-title-br_en {
+      display: none; } }
+.hero-text-br_ja {
+  display: block; }
+  @media screen and (min-width: 1080px) {
+    .hero-text-br_ja {
+      display: none; } }
+.hero-text-br_en {
+  display: none; }
+  @media screen and (min-width: 560px) {
+    .hero-text-br_en {
+      display: block; } }
+  @media screen and (min-width: 1280px) {
+    .hero-text-br_en {
+      display: none; } }
 .top-message {
   background: #f5f5f5; }
   .top-message_inner {
